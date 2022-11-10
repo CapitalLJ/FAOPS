@@ -1,0 +1,13 @@
+#!/usr/bin bash
+# extract some fa records by the given order
+# usage:
+#     faops order [options] <in.fa> <list.file> <out.fa>
+
+# options:
+#     -l INT     sequence line length [80]
+# faops size fasta.fa | sort -n -k 2 |cut -f 1 > 111
+# faops order fasta.fa 111 ./output/order01
+# rm -rf 111
+
+ faops order fasta.fa \
+  >(faops size fasta.fa | sort -n -r -k2,2 | cut -f 1) out.fa

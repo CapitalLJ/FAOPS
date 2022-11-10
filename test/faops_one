@@ -1,0 +1,13 @@
+#!/usr/bin bash
+#  extract one fa record
+
+# usage:
+#     faops some [options] <in.fa> <name> <out.fa>
+
+# options:
+#     -l INT     sequence line length [80]
+
+# in.fa  == stdin  means reading from stdin
+# out.fa == stdout means writing to stdout
+
+faops one fasta.fa read5 ./output/one01

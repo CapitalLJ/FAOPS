@@ -1,0 +1,15 @@
+#!/usr/bin bash
+# extract some fa records
+# usage:
+#     faops some [options] <in.fa> <list.file> <out.fa>
+
+# options:
+#     -i         Invert, output sequences not in the list
+#     -l INT     sequence line length [80]
+
+# in.fa  == stdin  means reading from stdin
+# out.fa == stdout means writing to stdout
+
+faops some fasta.fa list ./output/some01
+
+faops some -i fasta.fa list ./output/some02
