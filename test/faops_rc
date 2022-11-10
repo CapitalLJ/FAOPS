@@ -1,0 +1,20 @@
+#!/usr/bin bash
+#  reverse complement a FA file
+#  usage:
+#     faops rc [options] <in.fa> <out.fa>
+
+# options:
+#     -n         keep name identical (don't prepend RC_)
+#     -r         just Reverse, prepends R_
+#     -c         just Complement, prepends C_
+#     -f STR     only RC sequences in this list.file
+#     -l INT     sequence line length [80]
+
+faops rc -n one.fa ./output/rc01
+
+faops rc -r one.fa ./output/rc02
+
+faops rc -c -l 10 one.fa ./output/rc03
+
+faops rc -f list fasta.fa ./output/rc04
+

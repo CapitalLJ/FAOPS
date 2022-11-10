@@ -1,0 +1,12 @@
+#!/usr/bin bash
+# extract sub-sequences from a FA file
+# usage:
+#     faops frag [options] <in.fa> <start> <end> <out.fa>
+
+# options:
+#     -l INT     sequence line length [80]
+
+# in.fa  == stdin  means reading from stdin
+# out.fa == stdout means writing to stdout
+
+faops frag fasta.fa 10 20 ./output/01frag
