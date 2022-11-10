@@ -1,0 +1,2 @@
+# count base statistics in FA file(s)
+faops count fasta.fa 

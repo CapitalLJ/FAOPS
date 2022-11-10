@@ -1,0 +1,2 @@
+#count total bases in FA file(s)
+faops size fasta.fa
