@@ -1,0 +1,15 @@
+#!/usr/bin bash
+# extract regions from a FA file
+# usage:
+#     faops region [options] <in.fa> <region.txt> <out.fa>
+
+# options:
+#     -s         add strand '(+)' to headers
+#     -l INT     sequence line length [80]
+
+# <region.txt> is a text file containing one field
+#     seq_name:begin-end[,begin-end]
+
+
+faops region fasta.fa region.txt ./output/region01
+
